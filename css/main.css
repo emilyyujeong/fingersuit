@@ -1,0 +1,640 @@
+* {
+    outline: 1px solid --tomato;
+}
+
+body {
+    font-size: inherit;
+    font-family: 'Roboto', 'Noto Sans KR';
+    overflow-x: hidden;
+    color: #000;
+}
+
+p {
+    line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', 'Noto Sans KR';
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+
+.red {
+    color: #C10000
+}
+
+.more {
+    display: inline-block;
+
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+
+    text-align: center;
+}
+
+
+
+.topBanner {
+    position: fixed;
+    width: 100%;
+    height: 36px;
+    background: #000;
+    color: yellow;
+    position: relative;
+    z-index: 999;
+}
+
+.topBanner.on {
+    height: 0;
+    transition: height 0.5s;
+}
+
+.topBanner a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.topBanner i {
+    vertical-align: middle;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    z-index: 999;
+    color: #fff;
+}
+
+
+#header.on {
+    background: #ffffffcb;
+    color: #000;
+}
+
+#header h1 img {
+    width: 160px;
+    margin-right: 13px;
+}
+
+#header .hdWrap {
+    line-height: 100px;
+    display: flex;
+    transition: 0.5s;
+}
+
+.link {
+    color: #000;
+}
+
+
+/* 검색창 만들기 */
+
+#search {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #000;
+    width: 0;
+}
+
+
+#header .hdWrap.on {
+    background: rgba(255, 255, 255, 1);
+    color: #000;
+}
+
+
+#header .hdWrap h1 {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+#header .hdWrap h1 a {
+    display: block;
+    background: url(../img/logo.svg) no-repeat left center;
+    width: 160px;
+    font-size: 0;
+    transition: 0.5s;
+}
+
+#header .hdWrap.on h1 a {
+    background: url(../img/logo2.svg) no-repeat left center;
+}
+
+#header.on .hdWrap h1 a {
+    background: url(../img/logo2.svg) no-repeat left center;
+}
+
+#header .hdWrap .gnb {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header nav>ul {
+    display: flex;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+#header i {
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+
+
+#header .gnb {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .link {
+    margin-right: -150px;
+}
+
+#header .link>ul {
+    display: flex;
+    gap: 15px;
+}
+
+/* mainVisual slide 시작 */
+#main {}
+
+
+#mainVisual {
+    position: relative;
+    top: 35px;
+
+}
+
+#mainVisual .itm {
+    position: relative;
+
+    height: calc(100vh - 160px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#mainVisual .itm01 {
+    background-image: url(../img/main_visual01.jpg);
+}
+
+#mainVisual .itm02 {
+    background-image: url(../img/main_visual02.jpg);
+}
+
+#mainVisual .itm03 {
+    background-image: url(../img/main_visual03.jpg);
+}
+
+#mainVisual .itm04 {
+    background-image: url(../img/main_visual04.jpg);
+}
+
+#mainVisual .itm .slogan {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    text-align: end;
+}
+
+#mainVisual .itm .slogan h2 {
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    top: 100px;
+    margin: 0 0 50px 0;
+}
+
+#mainVisual .itm .slogan p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+}
+
+#mainVisual .itm .slogan a {
+    margin-top: 50px;
+}
+
+#mainVisual .swiper-pagination {
+    padding: 0 250px 20px 0;
+    text-align: end !important;
+}
+
+#mainVisual .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+}
+
+
+/* mainVideo */
+/* 
+#mainVideo {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#mainVideo a {
+    margin-bottom: 50px;
+}
+
+#mainVideo video {
+    width: 1200px;
+    text-align: center;
+}
+ */
+
+
+
+/* MainProduct SECTION - TRENDING NOW */
+
+#mainProduct {
+    padding: 100px 0;
+}
+
+.txt {
+    text-align: center;
+    line-height: 30px;
+}
+
+.more_view {
+    text-align: end;
+    padding: 50px 0 30px 0;
+}
+
+
+
+
+.s_more {
+    display: inline-block;
+}
+
+
+
+/* 상품 이름 - 가격 - 해시태그 글자 스타일 */
+.ht {
+    padding: 20px 0;
+    font-weight: 500;
+}
+
+.pr {
+    padding-bottom: 10px;
+
+}
+
+.id {
+    color: #444;
+}
+
+.product_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+}
+
+
+.pro_img_a {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro01-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_a:hover .pro01-1 {
+    display: block;
+}
+
+.pro_img_b {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro02-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_b:hover .pro02-1 {
+    display: block;
+}
+
+.pro_img_c {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro03-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_c:hover .pro03-1 {
+    display: block;
+}
+
+.pro_img_d {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro04-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_d:hover .pro04-1 {
+    display: block;
+}
+
+.pro_img_e {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro05-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_e:hover .pro05-1 {
+    display: block;
+}
+
+.pro_img_f {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro06-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_f:hover .pro06-1 {
+    display: block;
+}
+
+.pro_img_g {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro07-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_g:hover .pro07-1 {
+    display: block;
+}
+
+.pro_img_h {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro08-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_h:hover .pro08-1 {
+    display: block;
+}
+
+.product_list figure {
+    position: relative;
+}
+
+.product_list a {
+    position: absolute;
+    bottom: 27%;
+    right: 5%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+
+
+/* COLLECTION - COLLECTION SLIDE */
+
+#collection {
+    padding: 50px 0 100px 0;
+    background: #f5f5f5;
+}
+
+.swiper .swiper-pagination-bullet {
+    background-color: #000;
+
+}
+
+.collection_pro .swiper-pagination {
+    bottom: 0px;
+    z-index: 999 !important;
+}
+
+.collection_pro {
+    height: 550px;
+}
+
+/* STYLE BOARD SECTION - STYLEBOARD SLIDE */
+
+#styleboard {
+    padding: 100px 0;
+}
+
+
+.style_board {
+    height: 550px;
+}
+
+
+.style_board .swiper-pagination-progressbar-fill {
+    background: #000 !important;
+}
+
+
+.style_board .swiper-pagination-horizontal {
+    position: absolute !important;
+    transform: translate(0, 540px) !important;
+}
+
+
+/* REVIEW SECTION - REVIEW IMAGES */
+#review {
+    padding: 20px 0 100px 0;
+}
+
+
+.review_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+
+
+}
+
+
+/* FOOTER FOOTER FOOTER FOOTER */
+
+#footer {
+    padding: 50px 0 10px 0;
+    background: #000;
+    color: #ddd;
+    font-weight: 300;
+}
+
+#footer .top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+#footer .top .right>ul {
+    display: flex;
+    gap: 30px;
+}
+
+#footer .top .left>ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+#footer .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .bottom .left {
+    line-height: 24px;
+}
+
+#footer .bottom .left span {
+    font-weight: 500;
+
+}
+
+#footer .bottom .left>ul {
+    padding-bottom: 30px;
+}
+
+#footer .bottom .left .copy {
+    padding-top: 30px;
+    font-size: 14px;
+    color: #999999;
+}
+
+
+#footer .bottom .sns>ul {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+
+
+/* toTop */
+
+
+#toTop {
+    position: fixed;
+    bottom: 100px;
+    right: 150px;
+
+    z-index: 1000;
+
+    opacity: 0;
+    opacity: 0;
+    transition: 0.5s;
+
+    cursor: pointer;
+
+}
+
+
+
+#toTop.on {
+    opacity: 1;
+
+}
+
+#toTop i {
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    font-size: 26px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .inner {
+        width: auto;
+    }
+
+    #header .hdWrap {
+        line-height: 100px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+
+}

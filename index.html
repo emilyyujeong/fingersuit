@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>핑거수트</title>
+    <!-- <link rel="stylesheet" href="./css/default.css"> -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"
+        integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/main.js" defer></script>
+
+</head>
+
+<body>
+    <div class="Wrap">
+
+        <header id="header">
+            <div id="top_banner">
+                <div class="topBanner swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide itm01">
+                            <a href="">[회원첫구매] 15,000원 상당 케어 택1 증정<i class="xi-angle-right-min"></i></a>
+                        </div>
+                        <div class="swiper-slide itm02">
+                            <a href="">[카톡채널추가] 2천원 쿠폰 증정<i class="xi-angle-right-min"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hdWrap">
+                <nav class="gnb">
+                    <h1>
+                        <a href="/">로고</a>
+                    </h1>
+
+                    <ul>
+                        <li class="mc"><a href="">NEW ARRIVALS</a></li>
+                        <li><a href="">SHOP</a></li>
+                        <li><a href="">COLLECTION</a></li>
+                        <li><a href="">EVENT</a></li>
+                        <li><a href="">REVIEW</a></li>
+                        <li><a href="">BRAND</a></li>
+                    </ul>
+                    <div class="link">
+                        <ul>
+                            <li id="target"><input id="search" type="text" placeholder="검색어를 입력하세요">
+                                <a href=""><i class="bi bi-search" id="icon"></i>
+                                </a>
+                            </li>
+                            <li><a href=""><i class="bi bi-person"></i></a></li>
+                            <li><a href=""><i class="bi bi-bag"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        <main>
+
+            <section id="mainVisual">
+                <div class="mainSlide swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide itm itm01">
+                            <div class="slogan">
+                                <h2>NEW ARRIVALS <br />스프링 컬렉션</h2>
+                                <p class="desc">봄의 다양한 색을 통해<br />나만의 캐릭터를 자유롭게 표현해보세요.</p>
+                                <a class="more" href="">자세히보기</a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide itm itm02">
+                            <div class="slogan">
+                                <h2>GIFT<br />2월 포토리뷰 이벤트</h2>
+                                <p class="desc">적립금 최대 5천원<br />+큐티클 오일 푸셔 쿠폰 증정</p>
+                                <a class="more" href="">자세히보기</a>
+                            </div>
+
+
+                        </div>
+                        <div class="swiper-slide itm itm03">
+                            <div class="slogan">
+                                <h2>GIFT<br />2월 포토리뷰 이벤트</h2>
+                                <p class="desc">적립금 최대 5천원<br />+큐티클 오일 푸셔 쿠폰 증정</p>
+                                <a class="more" href="">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide itm itm04">
+                            <div class="slogan">
+                                <h2>BRAND ISSUE<br />매거진 속 핑거수트</h2>
+                                <p class="desc">패션 매거진 속<br />핑거수트를 만나보세요</p>
+                                <a class="more" href="">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+
+                </div>
+            </section>
+            <!-- 
+            <section id="mainVideo">
+                <div class="inner">
+                    <h3>SPRING COLLECTION</h3>
+                    <div class="more_view">
+                        <a class="s_more" href="">MORE <i class="xi-angle-right"></i></a>
+                    </div>
+                    <div class="inner">
+                        <video src="/img/main_video.mp4" autoplay loop muted playsinline></video>
+                    </div>
+                </div>
+
+            </section> -->
+
+            <section id="mainProduct">
+                <div class="inner">
+                    <div class="txt">
+                        <h3>TRENDING NOW</h3>
+                        <p>핑거수트와 함께 감각적인 스타일을 완성하고 당당하게 빛나는 나를 드러내세요.</p>
+                        <div class="more_view">
+                            <a class="s_more" href="">MORE <i class="xi-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="product_list">
+                        <figure class="itm01">
+                            <div class="pro_img_a">
+                                <img src="./img/main_pro_01.jpg" alt="" class="pro01">
+                                <img src="./img/main_pro_01_on.jpg" alt="" class="pro01-1">
+                            </div>
+
+                            <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                            <div class="pr">13,800원</div>
+                            <div class="id">#스테디셀러#재입고</div>
+
+                            <a href=""><i class="bi bi-bag"></i></a>
+                        </figure>
+                        <figure class="itm02">
+                            <div class="pro_img_b">
+                                <img src="./img/main_pro_02.jpg" alt="" class="pro02">
+                                <img src="./img/main_pro_02_on.jpg" alt="" class="pro02-1">
+                            </div>
+
+                            <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                            <div class="pr">13,800원</div>
+                            <div class="id">#스테디셀러#재입고</div>
+
+                            <a href=""><i class="bi bi-bag"></i></a>
+                        </figure>
+                        <figure class="itm03">
+                            <div class="pro_img_c">
+                                <img src="./img/main_pro_03.jpg" alt="" class="pro03">
+                                <img src="./img/main_pro_03_on.jpg" alt="" class="pro03-1">
+                            </div>
+
+                            <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                            <div class="pr">13,800원</div>
+                            <div class="id">#스테디셀러#재입고</div>
+
+                            <a href=""><i class="bi bi-bag"></i></a>
+                        </figure>
+                        <figure class="itm04">
+                            <div class="pro_img_d">
+                                <img src="./img/main_pro_04.jpg" alt="" class="pro04">
+                                <img src="./img/main_pro_04_on.jpg" alt="" class="pro04-1">
+                            </div>
+
+                            <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                            <div class="pr">13,800원</div>
+                            <div class="id">#스테디셀러#재입고</div>
+
+                            <a href=""><i class="bi bi-bag"></i></a>
+                        </figure>
+                        <figure class="itm05">
+                            <div class="pro_img_e">
+                                <img src="./img/main_pro_05.jpg" alt="" class="pro05">
+                                <img src="./img/main_pro_05_on.jpg" alt="" class="pro05-1">
+                            </div>
+
+                            <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                            <div class="pr">13,800원</div>
+                            <div class="id">#스테디셀러#재입고</div>
+
+                            <a href=""><i class="bi bi-bag"></i></a>
+                        </figure>
+                        <figure class="itm06">
+                            <div class="pro_img_f">
+                                <img src="./img/main_pro_06.jpg" alt="" class="pro06">
+                                <img src="./img/main_pro_06_on.jpg" alt="" class="pro06-1">
+                            </div>
+
+                            <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                            <div class="pr">13,800원</div>
+                            <div class="id">#스테디셀러#재입고</div>
+
+                            <a href=""><i class="bi bi-bag"></i></a>
+                        </figure>
+                        <figure class="itm07">
+                            <div class="pro_img_g">
+                                <img src="./img/main_pro_07.jpg" alt="" class="pro07">
+                                <img src="./img/main_pro_07_on.jpg" alt="" class="pro07-1">
+                            </div>
+
+                            <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                            <div class="pr">13,800원</div>
+                            <div class="id">#스테디셀러#재입고</div>
+
+                            <a href=""><i class="bi bi-bag"></i></a>
+                        </figure>
+                        <figure class="itm08">
+                            <div class="pro_img_h">
+                                <img src="./img/main_pro_08.jpg" alt="" class="pro08">
+                                <img src="./img/main_pro_08_on.jpg" alt="" class="pro08-1">
+                            </div>
+
+                            <div class="ht">[뉴진스 다니엘 착용] 베이비 부머 네일(코핀)</div>
+                            <div class="pr">13,800원</div>
+                            <div class="id">#스테디셀러#재입고</div>
+
+                            <a href=""><i class="bi bi-bag"></i></a>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="collection">
+                <div class="inner">
+                    <div class="txt">
+                        <h3>SPRING COLLECTION</h3>
+                        <P>핑거수트가 제안하는 봄의 다양한 색을 통해
+                            나만의 캐릭터를 자유롭게 표현해보세요.
+                        </P>
+                        <div class="more_view">
+                            <a class="s_more" href="">MORE <i class="xi-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="collection_product_box">
+
+                        <div class="collection_pro swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide itm itm01">
+                                    <div class="img_box">
+                                        <img src="/img/banner_slide_01.jpg" alt="">
+                                    </div>
+                                    <div class="pro_desc">
+                                        <div class="ht">코튼 마블 네일(오벌)</div>
+                                        <div class="pr">15,000원</div>
+                                        <div class="id">#신상할인 #마블 #반시럽</div>
+                                    </div>
+
+
+                                </div>
+                                <div class="swiper-slide itm itm02">
+                                    <div class="img_box">
+                                        <img src="/img/banner_slide_02.jpg" alt="">
+                                    </div>
+                                    <div class="pro_desc">
+
+                                        <div class="ht">코튼 마블 네일(오벌)</div>
+                                        <div class="pr">15,000원</div>
+                                        <div class="id">#신상할인 #마블 #반시럽</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide itm itm03">
+                                    <div class="img_box">
+                                        <img src="/img/banner_slide_03.jpg" alt="">
+                                    </div>
+                                    <div class="pro_desc">
+                                        <div class="ht">코튼 마블 네일(오벌)</div>
+                                        <div class="pr">15,000원</div>
+                                        <div class="id">#신상할인 #마블 #반시럽</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide itm itm04">
+                                    <div class="img_box">
+                                        <img src="/img/banner_slide_04.jpg" alt="">
+                                    </div>
+                                    <div class="pro_desc">
+                                        <div class="ht">코튼 마블 네일(오벌)</div>
+                                        <div class="pr">15,000원</div>
+                                        <div class="id">#신상할인 #마블 #반시럽</div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide itm itm05">
+                                    <div class="img_box">
+                                        <img src="/img/banner_slide_05.jpg" alt="">
+                                    </div>
+
+                                    <div class="pro_desc">
+                                        <div class="ht">코튼 마블 네일(오벌)</div>
+                                        <div class="pr">15,000원</div>
+                                        <div class="id">#신상할인 #마블 #반시럽</div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide itm itm06">
+                                    <div class="img_box">
+                                        <img src="/img/banner_slide_06.jpg" alt="">
+                                    </div>
+                                    <div class="pro_desc">
+                                        <div class="ht">코튼 마블 네일(오벌)</div>
+                                        <div class="pr">15,000원</div>
+                                        <div class="id">#신상할인 #마블 #반시럽</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide itm itm06">
+                                    <div class="img_box">
+                                        <img src="/img/banner_slide_07.jpg" alt="">
+                                    </div>
+                                    <div class="pro_desc">
+                                        <div class="ht">코튼 마블 네일(오벌)</div>
+                                        <div class="pr">15,000원</div>
+                                        <div class="id">#신상할인 #마블 #반시럽</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide itm itm06">
+                                    <div class="img_box">
+                                        <img src="/img/banner_slide_08.jpg" alt="">
+                                    </div>
+                                    <div class="pro_desc">
+                                        <div class="ht">코튼 마블 네일(오벌)</div>
+                                        <div class="pr">15,000원</div>
+                                        <div class="id">#신상할인 #마블 #반시럽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+
+
+            <section id="styleboard">
+                <div class="inner">
+                    <div class="txt">
+                        <h3>STYLE BOARD</h3>
+                        <P>이번 시즌 새로운 트렌드의 네일 디자인을 만나보세요.</P>
+                        <div class="more_view">
+                            <a class="s_more" href="">MORE <i class="xi-angle-right"></i></a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="style_board swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide itm itm01">
+                                <div class="img_box">
+                                    <img src="/img/styleboard_01.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide itm itm02">
+                                <div class="img_box">
+                                    <img src="/img/styleboard_02.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide itm itm03">
+                                <div class="img_box">
+                                    <img src="/img/styleboard_03.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide itm itm04">
+                                <div class="img_box">
+                                    <img src="/img/styleboard_04.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide itm itm05">
+                                <div class="img_box">
+                                    <img src="/img/styleboard_05.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide itm itm06">
+                                <div class="img_box">
+                                    <img src="/img/styleboard_06.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide itm itm07">
+                                <div class="img_box">
+                                    <img src="/img/styleboard_07.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide itm itm08">
+                                <div class="img_box">
+                                    <img src="/img/styleboard_08.jpg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="review">
+                <div class="inner">
+                    <div class="txt">
+                        <h3>MY #FINGER SUIT</h3>
+                        <p>지금 바로 생생한 구매자 리뷰를 확인하세요</p>
+                        <div class="more_view">
+                            <a class="s_more" href="">MORE <i class="xi-angle-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="review_list">
+
+                        <figure class="itm">
+                            <a href=""><img src="./img/sns_img_01.jpg" alt=""></a>
+                        </figure>
+                        <figure class="itm">
+                            <a href=""><img src="./img/sns_img_02.jpg" alt=""></a>
+                        </figure>
+                        <figure class="itm">
+                            <a href=""><img src="./img/sns_img_03.jpg" alt=""></a>
+                        </figure>
+                        <figure class="itm">
+                            <a href=""> <img src="./img/sns_img_04.jpg" alt=""></a>
+                        </figure>
+                        <figure class="itm">
+                            <a href=""><img src="./img/sns_img_05.jpg" alt=""></a>
+                        </figure>
+                        <figure class="itm">
+                            <a href=""> <img src="./img/sns_img_06.jpg" alt=""></a>
+                        </figure>
+                        <figure class="itm">
+                            <a href=""><img src="./img/sns_img_07.jpg" alt=""></a>
+                        </figure>
+                        <figure class="itm">
+                            <a href=""><img src="./img/sns_img_08.jpg" alt=""></a>
+                        </figure>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="top">
+                    <div class="left">
+                        <ul>
+                            <li><a href="">회사소개</a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">공지사항</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <ul>
+                            <li><span>고객센터</span> 070-4740-0005</li>
+                            <li>평일 : 9:00 ~ 18:00 점심시간 : 12:00 ~ 13:00 (주말, 공휴일 휴무)</li>
+
+                        </ul>
+                        <ul>
+                            <li><span>주소</span> 서울특별시 강남구 학동로 342 (논현동) 에스케이 허브블루 1112호</li>
+                            <li><span>사업자 등록번호</span> 881-86-01964 <span> 사업자정보확인</span> 06099</li>
+                            <li><span>통신판매번호</span> 2021-서울강남-02730</li>
+                            <li>개인정보 관리 및 보호 책임 KIM SAE HEE</li>
+                            <li>대표이사 KIM SAE HEE</li>
+                            <div class="copy">
+                                COPYRIGHT &copy; fingersuit all rights reserved.
+                            </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="sns">
+                            <ul>
+                                <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                                <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                                <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+
+    </div>
+    <div id="toTop">
+        <i class="bi bi-chevron-up"></i>
+    </div>
+
+</body>
+
+</html>
