@@ -1,3 +1,37 @@
+//mopen
+
+window.addEventListener('DOMContentLoaded', function () {
+
+    const mopen = document.querySelectorAll('.mopen');
+    const cover = document.querySelector('.cover');
+    const nav = document.querySelector('nav');
+    const coverLi = document.querySelectorAll('.cover li');
+
+    mopen.forEach(function (elem) {
+        elem.addEventListener('click', function () {
+            this.classList.toggle('on');
+            cover.classList.toggle('on');
+            nav.classList.toggle('on');
+        });
+    });
+
+    coverLi.forEach(function (elem) {
+        elem.addEventListener('click', function () {
+            cover.classList.remove('on');
+            mopen.forEach(function (elem) {
+                elem.classList.remove('on');
+            });
+            nav.classList.toggle('on');
+        });
+    });
+
+    cover.addEventListener('wheel', function (e) {
+        e.preventDefault();
+    });
+
+});
+
+
 //top banner
 
 const TOP_BANNER = document.querySelector('.topBanner');
@@ -76,12 +110,44 @@ const MAIN_VISUAL_SLIDE_OPTION = {
 const MAIN_VISUAL_SLIDE = new Swiper('.mainSlide', MAIN_VISUAL_SLIDE_OPTION);
 
 
+//main_product Slide
+
+
+// const MAIN_PRODUCT_SLIDE_OPTION = {
+//     slidesPerView: 4,
+//     spaceBetween: 30,
+//     breakpoints: {
+//         480: {
+//             slidesPerView: 5,
+//             spaceBetween: 50,
+//         },
+//         640: {
+//             slidesPerView: 5,
+//             spaceBetween: 50,
+//         }
+//     },
+// }
+
+// const MAIN_PRODUCT_SLIDE = new Swiper('.main_pro', MAIN_PRODUCT_SLIDE_OPTION);
+
+
+
 //mainCollectionProduct Slide
 
 
 const MAIN_COLLECTION_SLIDE_OPTION = {
     slidesPerView: 4,
     spaceBetween: 30,
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+        },
+        640: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        }
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -99,6 +165,16 @@ const STYLEBOARD_SLIDE_OPTION = {
 
     slidesPerView: 4,
     spaceBetween: 30,
+    breakpoints: {
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+        },
+        640: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        }
+    },
     pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
@@ -107,6 +183,7 @@ const STYLEBOARD_SLIDE_OPTION = {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+
 }
 
 const STYLEBOARD_SLIDE = new Swiper('.style_board', STYLEBOARD_SLIDE_OPTION);
