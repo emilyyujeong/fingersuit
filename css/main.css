@@ -32,7 +32,7 @@ h6 {
 .cover {
     position: fixed;
     inset: 0 0 0 0;
-    background: #000000a1;
+    background: #000000de;
     z-index: 998;
 
     display: flex;
@@ -281,9 +281,20 @@ h3 {
         display: block;
     }
 
-    #header {}
 
-    #header .hdWrap ul {
+    #header {
+        position: absolute;
+    }
+
+    #header .hdWrap {
+        display: block;
+    }
+
+    #header .hdWrap .gnb {
+        width: 100%;
+    }
+
+    #header nav>ul a {
         display: none;
     }
 
@@ -513,6 +524,7 @@ h3 {
 .ht {
     padding: 20px 0;
     font-weight: 500;
+    word-break: keep-all;
 }
 
 .pr {
@@ -522,6 +534,7 @@ h3 {
 
 .id {
     color: #444;
+    word-break: keep-all;
 }
 
 .product_list {
@@ -685,16 +698,11 @@ h3 {
     }
 
     .product_list .itm {
-        height: 350px;
+        height: 300px;
     }
 
     .product_list a {
-        position: absolute;
-        bottom: 16%;
-        right: 5%;
-        background: #fff;
-        padding: 10px;
-        border-radius: 50%;
+        display: none;
 
     }
 }
@@ -759,7 +767,7 @@ h3 {
 
 
 .style_board {
-    height: 550px;
+    height: 410px;
 }
 
 
@@ -770,7 +778,7 @@ h3 {
 
 .style_board .swiper-pagination-horizontal {
     position: absolute !important;
-    transform: translate(0, 540px) !important;
+    transform: translate(0, 400px) !important;
 }
 
 /* RESPONSIVE - STYLE BOARD SECTION - STYLEBOARD SLIDE */
@@ -780,16 +788,14 @@ h3 {
 
     #styleboard {
         margin: 0 auto;
-
     }
-
 
     .style_board .itm {
         text-align: center;
     }
 
     .style_board .itm img {
-        height: 500px;
+        height: 350px;
     }
 
 }
@@ -825,12 +831,7 @@ h3 {
     padding-bottom: 30px;
 }
 
-#footer .top .right>ul {
-    display: flex;
-    gap: 30px;
-}
-
-#footer .top .left>ul {
+#footer .top ul {
     display: flex;
     gap: 30px;
 }
@@ -852,6 +853,7 @@ h3 {
 
 #footer .bottom .left>ul {
     padding-bottom: 30px;
+
 }
 
 #footer .bottom .left .copy {
@@ -878,6 +880,14 @@ h3 {
         font-weight: 300;
     }
 
+
+    #footer .top ul {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+
+
     #footer .top {
         display: flex;
         justify-content: center;
@@ -889,7 +899,12 @@ h3 {
         text-align: center;
     }
 
+    #footer .bottom ul>li {
+        font-size: 14px;
+    }
+
     #footer .bottom .sns>ul {
+
         display: flex;
         justify-content: center;
     }
@@ -941,12 +956,6 @@ h3 {
         padding: 0 10px;
     }
 
-    #header .hdWrap {
-        line-height: 100px;
-        display: flex;
-        flex-direction: column;
-        transition: 0.5s;
-    }
 
     #toTop {
         bottom: 50px;

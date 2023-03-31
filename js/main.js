@@ -139,12 +139,12 @@ const MAIN_COLLECTION_SLIDE_OPTION = {
     slidesPerView: 4,
     spaceBetween: 30,
     breakpoints: {
-        480: {
+        200: {
             slidesPerView: 2,
             spaceBetween: 50,
         },
         640: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 50,
         }
     },
@@ -166,7 +166,7 @@ const STYLEBOARD_SLIDE_OPTION = {
     slidesPerView: 4,
     spaceBetween: 30,
     breakpoints: {
-        480: {
+        200: {
             slidesPerView: 1,
             spaceBetween: 50,
         },
